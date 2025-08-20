@@ -181,6 +181,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px auto;
+
 }
 
 .subscribe-img {
@@ -253,13 +255,20 @@ main {
 }
 /* responsive media query */
 @media screen and (max-width: 430px) {
-  .banner .product-grid {
+  .banner .product-grid .Our-Plants .flower-section .latest-deals .subscribe .footer{
     flex-direction: column;
   }
   .product-grid{
    grid-template-columns: repeat(2,1fr);
   }
-  
+  .flower-section{
+  display: grid;
+  grid-template-columns:repeat(1,1fr) ;
+  }
+  .deals-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
     } 
 
     
