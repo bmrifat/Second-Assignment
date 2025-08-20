@@ -24,7 +24,9 @@
 .display-flex {
     display: flex;
 }
-
+.desktop-only {
+  display: block;
+}
 .text-center {
   text-align: center;
 }
@@ -76,7 +78,7 @@
     margin: 0 auto ;
 }
 .banner-title {
-  font-weight: 700px;
+  font-weight: 600px;
   font-size: 4rem;  
 }
 .banner-discription{
@@ -89,7 +91,10 @@
     justify-content: space-between;
     margin-top: 221px;
 }
-
+.banner-img {
+  max-width: 100%;
+  height: auto;
+}
 main {
   max-width: 1440px;
  max-width: calc(100% - 300px); /* 150px gap left+right */
@@ -122,7 +127,7 @@ main {
     margin: 150px;
     column-gap: 50px;
 }
-.flower-image{
+.flower-image {
   width: 540px;
   height: 597px;
 }
@@ -257,6 +262,24 @@ main {
 @media screen and (max-width: 430px) {
   .banner .product-grid .Our-Plants .flower-section .latest-deals .subscribe .footer{
     flex-direction: column;
+  }
+  .desktop-only{
+    display: none;
+  }
+  .navbar ul li {
+ 
+  }
+  .banner{
+    flex-direction: column;
+    margin-top: 0;
+    padding: 16px;
+    height: auto;
+    overflow: visible;
+  }
+  .banner-img{
+    max-width: 100%;
+    height: auto;
+    order: -1;
   }
   .product-grid{
    grid-template-columns: repeat(2,1fr);
